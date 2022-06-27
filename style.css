@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans pro", sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #00ffff;
+  align-items: center;
+  height: 100%;
+
+  max-height: 70px;
+}
+
+.menu img {
+  width: 100%;
+  max-width: 147px;
+}
+
+.menu-lista a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-lista a:hover {
+  color: #1c99e0;
+}
+
+.titulo {
+  background-image: url("assets/recepcao.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  position: relative;
+}
+
+.titulo h1 {
+  color: #fff;
+  position: absolute;
+  left: 18%;
+  top: 35%;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.sobre {
+  text-align: center;
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.sobre h3 {
+  font-size: 27px;
+  color: #4d4c4cd2;
+}
+
+.sobre h4 {
+  font-size: 22px;
+  color: #4d4c4cd2;
+}
+
+.sobre h5 {
+  font-size: 24px;
+  color: #4d4c4cd2;
+}
+.sobre p {
+  margin-top: 31px;
+  color: #7e7e7ed2;
+  font-weight: normal;
+  font-size: 19px;
+  max-width: 661px;
+  width: 100%;
+}
+
+.sobre span {
+  font-weight: bold;
+  color: #7a7a7a;
+}
+
+.lista {
+  display: flex;
+  margin-top: 27px;
+  margin-bottom: 81px;
+  gap: 50px;
+  align-items: center;
+  color: #5a5a5ad2;
+  justify-content: center;
+}
+
+.lista h3 {
+  color: #7e7e7ed2 !important;
+  margin-bottom: 18px;
+}
+
+.lista ul {
+  margin-left: 47px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 76px;
+  margin-top: 63px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  max-width: 19%;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+
+  padding-bottom: 15px;
+}
+
+.card span {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #707070d2;
+}
+
+.bt-horario {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+.bt-horario a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: #01c9c9;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #0c6e71;
+}
+
+.rodape img {
+  width: 100%;
+  max-width: 122px;
+  padding-top: 5px;
+}
+
+.descricao,
+.rodape {
+  text-align: center;
+}
+
+.descricao p {
+  color: #fff;
+  line-height: 35px;
+}
+
+footer {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    justify-content: space-between;
+  }
+  .menu img {
+    margin-left: 15px;
+  }
+  .menu-lista {
+    margin-right: 26px;
+  }
+
+  .titulo h1 {
+    left: 0;
+    margin-left: 13px;
+  }
+  #linha {
+    font-size: 20px;
+  }
+  .card-container {
+    gap: 37px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 230px;
+  }
+
+  .contato p {
+    margin-top: 19px;
+  }
+
+  .container {
+    margin: 15px auto;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .menu {
+    justify-content: space-between;
+  }
+  .menu img {
+    width: 70%;
+  }
+  .titulo {
+    height: 40vh;
+  }
+  .titulo h1 {
+    font-size: 2rem;
+    left: 0;
+  }
+
+  .sobre h3 {
+    font-size: 26px;
+  }
+
+  .lista img {
+    display: none;
+  }
+
+  .lista {
+    margin-top: 48px;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 100%;
+    max-width: 313px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 745px;
+  }
+
+  p,
+  span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .menu {
+    flex-direction: column;
+    padding: 6px;
+    padding-bottom: 106px;
+    align-items: center;
+  }
+
+  .menu img {
+    width: 100%;
+    max-width: 125px;
+  }
+
+  .menu-lista span {
+    font-size: 16px;
+  }
+  .menu-lista {
+    border-top: 1px solid #3d8bff60;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 0px auto;
+  }
+
+  .titulo {
+    height: 200px;
+  }
+  .titulo h1 {
+    font-size: 25px;
+    left: 8px;
+  }
+  .lista img {
+    display: none;
+  }
+
+  .sobre {
+    margin-top: 55px;
+  }
+
+  .sobre h3 {
+    font-size: 23px;
+    margin-top: -14px;
+  }
+
+  .sobre h4 {
+    margin-top: -35px;
+  }
+
+  .sobre h5 {
+    font-size: 22px;
+    color: #4d4c4cd2;
+  }
+
+  .sobre p {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 13px;
+  }
+
+  .lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3px;
+    margin-top: 43px;
+  }
+  .lista h3 {
+    font-size: 18px;
+  }
+
+  #linha {
+    font-size: 18px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .card {
+    width: 100%;
+    max-width: 325px;
+  }
+
+  .contato h3 {
+    margin-top: 4px;
+    margin-bottom: -12px;
+  }
+  .contato {
+    width: 100%;
+    max-width: 412px;
+    margin: 29px auto;
+  }
+}
