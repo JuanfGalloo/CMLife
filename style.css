@@ -354,3 +354,15 @@ footer {
     margin: 29px auto;
   }
 }
+
+@media (max-width: 352px) {
+  html {
+    width: 50vh;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    width: 50vh;
+  }
+}
